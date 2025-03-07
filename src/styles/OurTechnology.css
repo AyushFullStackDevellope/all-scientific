@@ -1,0 +1,88 @@
+.our-technology-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    left: 0;
+    padding: 0.5rem 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .back-button:hover {
+    background-color: #003d82;
+  }
+  
+  .header-section h1 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .tech-intro, .tech-innovation {
+    margin-bottom: 3rem;
+  }
+  
+  .tech-intro h2, .tech-innovation h2 {
+    color: #0056b3;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-intro p, .tech-innovation p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  .tech-features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .feature {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .feature p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  @media (min-width: 768px) {
+    .tech-features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
