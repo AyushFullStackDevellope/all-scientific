@@ -18,8 +18,12 @@ import TempControll from "./components/TempControll";
 import Agreement from "./components/Agreement.js";
 import useScrollAnimation from "./components/useScrollAnimation";
 import MriChillers from "./components/MriChillers";
-import OurTechnology from "./components/OurTechnology";
+// import OurTechnology from "./components/OurTechnology";
 import Contact from "./components/Contact";
+import EquipmentBrand from "./components/EquipmentBrand.js";
+import ReqServices from "./components/ReqServices.js";
+
+// import About from "./components/About";
 
 function MainLayout() {
   useScrollAnimation({ duration: 200, easing: "easeInOutQuad", offset: -80 });
@@ -57,11 +61,11 @@ function MainLayout() {
   return (
     <div className="App">
       <Header scrollToSection={scrollToSection} />
-      <div id="main" className="section-fade-in">
+      <div id="main" className="section-fade-in" >
         <Home />
       </div>
       {/* <div ref={homeRef} className="section-fade-in" dangerouslySetInnerHTML={{ __html: htmlContent }} /> */}
-      <div id="services" className="section-fade-in">
+      <div id="services" className="section-fade-in" >
         <Services />
       </div>
       <TheData />
@@ -75,19 +79,22 @@ function MainLayout() {
         <Agreement />
       </div>
       <Footer />
+      
     </div>
   );
 }
-// =================================ROUTING BETWEENS COMPONENTS FILES==============================================
+// =================================ROUTING BETWEENS COMPONENTS==============================================
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainLayout />} />
+        <Route  path="/" element={<MainLayout />} />
         <Route path="/temp-control" element={<TempControll />} />
         <Route path="/mri-chillers" element={<MriChillers />} />
-        <Route path="/our-technology" element={<OurTechnology />} />
+        {/* <Route path="/our-technology" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
+        <Route path="/equipment-brands" element={<EquipmentBrand />} />
+        <Route path="/request-service" element={<ReqServices />} /> 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

@@ -80,12 +80,12 @@ const Header = ({ scrollToSection, refs }) => {
       <nav className="nav-menu" ref={menuRef}>
         <ul className={isMenuOpen ? "show" : ""}>
           <li className="home-link">
-            <a onClick={(e) => { e.preventDefault(); handleSectionNavigation('main'); }}>
+            <a  onClick={(e) => { e.preventDefault(); handleSectionNavigation('main'); }}>
               Home
             </a>
           </li>
           <li className="services-link">
-            <a onClick={(e) => { e.preventDefault(); handleSectionNavigation('services'); }}>
+            <a href="#services"  onClick={(e) => { e.preventDefault(); handleSectionNavigation('services'); }}>
               Services
             </a>
           </li>
@@ -101,11 +101,24 @@ const Header = ({ scrollToSection, refs }) => {
           </li>
           <li className="dropdown">
             {/* Dropdown toggle button */}
-            <a href="#more" className="dropbtn" onClick={toggleDropdown}>
+            <a  className="dropbtn" onClick={toggleDropdown}>
               More
             </a>
             {/* Dropdown content with controlled visibility */}
             <div className={`dropdown-content ${isDropdownOpen ? "show-dropdown" : ""}`}>
+              <a
+                href="#customers"  onClick={(e) => { e.preventDefault(); handleSectionNavigation('customers'); }}
+              >
+                Customers
+              </a>
+              <a href="#posts" onClick={(e) => { e.preventDefault(); handleSectionNavigation('posts'); }}>
+                Posts
+              </a>
+              <a
+                href="#agreement" onClick={(e) => { e.preventDefault(); handleSectionNavigation('agreement'); }}
+              >
+                Agreements
+              </a>
               <a 
                 href="#mri-chillers" 
                 onClick={(e) => handleNavigate(e, "/mri-chillers")}
@@ -113,29 +126,22 @@ const Header = ({ scrollToSection, refs }) => {
                 MRI Chillers
               </a>
               <a 
-                href="#our-technology" 
-                onClick={(e) => handleNavigate(e, "/our-technology")}
+                href="#equipment-brands" 
+                onClick={(e) => handleNavigate(e, "/equipment-brands")}
               >
-                Our Technology
+                Equipment & Brands
               </a>
               <a
-                onClick={(e) => { e.preventDefault(); handleSectionNavigation('customers'); }}
-              >
-                Customers
-              </a>
-              <a
-                onClick={(e) => { e.preventDefault(); handleSectionNavigation('agreement'); }}
-              >
-                Agreements
-              </a>
-              <a
-                href="#"
+                href="#temp-control"
                 onClick={(e) => handleNavigate(e, "/temp-control")}
               >
                 Temp Controlled
               </a>
-              <a onClick={(e) => { e.preventDefault(); handleSectionNavigation('posts'); }}>
-                Posts
+              <a 
+                href="#our-technology" 
+                onClick={(e) => handleNavigate(e, "/our-technology")}
+              >
+                Our Technology
               </a>
             </div>
           </li>
