@@ -32,4 +32,4 @@ export const faqItems = [
       answer: "Your calibration will be valid for a year, which is the industry standard.",
     },
   ];
-  
+ 

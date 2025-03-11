@@ -1,14 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion for animations
 import "../styles/TheData.css"; // Import external CSS for styling
-
-// Data array containing statistics about the company
-const stats = [
-  { value: "10k", label: "Equipment Profiles Managed", icon: "🔧" },
-  { value: "50+", label: "Manufacturers We Service", icon: "🏭" },
-  { value: "35k", label: "Parts in Inventory", icon: "📦" },
-  { value: "76", label: "Years in Business", icon: "🚛" },
-];
+import { stats } from "../constants/TheDataItems.js";
 
 const TheData = () => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Agreement.css';
-import { Box, Wrench, Clipboard } from './common/AgreementIcons.js';
 import { agreementData } from '../constants/AgreementData.js';
 
 const AgreementCard = ({ icon: Icon, title, details }) => {

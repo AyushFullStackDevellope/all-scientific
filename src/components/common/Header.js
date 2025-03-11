@@ -90,7 +90,7 @@ const Header = ({ scrollToSection, refs }) => {
             </a>
           </li>
           <li>
-            <a href="#about" onClick={(e) => handleNavigate(e, "/our-technology")}>
+            <a href="#about" onClick={(e) => handleNavigate(e, "/about")}>
               About
             </a>
           </li>
