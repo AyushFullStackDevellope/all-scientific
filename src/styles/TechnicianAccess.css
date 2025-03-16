@@ -1,0 +1,110 @@
+.tech-main-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.tech-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tech-logo {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.tech-tagline {
+  color: red;
+  font-size: 14px;
+}
+
+.tech-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.tech-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tech-image {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.tech-certification {
+  max-width: 400px;
+  text-align: left;
+}
+
+.tech-certified-image {
+  width: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tech-scientific-link {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tech-sub-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.tech-access-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.tech-category {
+  background: #ccc;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tech-offsite {
+  background: lightgray;
+}
+
+.tech-onsite {
+  background: gray;
+  color: white;
+}
+
+.tech-access-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tech-access-item {
+  width: 180px;
+  text-align: center;
+}
+
+.tech-access-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.tech-access-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(21, 63, 213);
+}

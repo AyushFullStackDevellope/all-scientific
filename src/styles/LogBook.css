@@ -1,0 +1,166 @@
+/* ====== Global Styles ====== */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* ====== Header Section ====== */
+.logbook-header {
+  background: linear-gradient(to right, #34629f, #0c4b899f);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.logbook-logo {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.logbook-intro {
+  font-size: 14px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.logbook-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ====== Main Container ====== */
+.logbook-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ====== Section Styling ====== */
+.logbook-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.logbook-section:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Section Titles ====== */
+.section-title {
+  color: #004aad;
+  font-size: 22px;
+  border-bottom: 3px solid #004aad;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* ====== Two-Column Layout (Desktop) ====== */
+.logbook-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logbook-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ====== List Styles (Refined) ====== */
+.list {
+  padding: 0;
+}
+
+.list li {
+  list-style: none;
+  background: #f0f5ff;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+}
+
+.list li:hover {
+  background: #e0ebff;
+}
+
+.list li::before {
+  content: "✔"; /* Custom checkmark */
+  color: #004aad;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ====== Call-to-Action Buttons ====== */
+.btn {
+  display: inline-block;
+  background: #004aad;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #003a87;
+}
+
+/* ====== Footer ====== */
+.logbook-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #2c63ad;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.logbook-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.logbook-footer a:hover {
+  color: #cce0ff;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .logbook-container {
+    width: 95%;
+  }
+
+  .logbook-title {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .list li {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

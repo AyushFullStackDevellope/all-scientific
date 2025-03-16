@@ -1,0 +1,82 @@
+.intelligence-container {
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.intelligence-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intelligence-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.intelligence-logo img {
+  width: 120px;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #d60029;
+  font-weight: bold;
+}
+
+.intelligence-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.intelligence-section {
+  max-width: 250px;
+  text-align: center;
+}
+
+.intelligence-section h2 {
+  color: #d60029;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.intelligence-section p {
+  font-size: 16px;
+}
+
+.intelligence-center img {
+  width: 180px;
+}
+
+@media (max-width: 768px) {
+  .intelligence-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .intelligence-logo img {
+    width: 100px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .intelligence-section h2 {
+    font-size: 18px;
+  }
+
+  .intelligence-section p {
+    font-size: 14px;
+  }
+
+  .intelligence-center img {
+    width: 150px;
+  }
+}

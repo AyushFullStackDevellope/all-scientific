@@ -3,16 +3,37 @@
 .footer {
   background-color: #0D1B2A;
   color: #ffffff;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Company info column */
+.company-info {
+  grid-column: 1;
+}
+
+/* Middle column with contact and locations */
+.footer-info-column {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Map column */
+.locations-map-section {
+  grid-column: 3;
 }
 
 .footer-section {
@@ -20,7 +41,7 @@
 }
 
 .footer-logo {
-  width: 300px;
+  width: 250px;
   margin-bottom: 15px;
 }
 
@@ -67,30 +88,31 @@
 .footer-section ul li i,
 .footer-section p i {
   color: #f0a500;
+  min-width: 16px;
+  text-align: center;
 }
 
 /* Logos Section */
 .footer-logos {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 0px;
-  background-color: transparent;
+  gap: 30px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .partner-logo {
   transition: transform 0.3s ease;
-  height: 80px;
+  height: 60px;
 }
 
 .partner-logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid #444;
-  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 15px;
   text-align: center;
   font-size: 14px;
@@ -100,10 +122,11 @@
 /* Map container styles */
 .map-container {
   width: 100%;
-  height: 150px;
+  height: 180px;
   margin-bottom: 10px;
   border-radius: 6px;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .location-map {
@@ -116,17 +139,18 @@
 .location-tabs {
   display: flex;
   margin-bottom: 10px;
-  flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
 }
 
 .location-tab {
   font-size: 12px;
-  padding: 4px 8px;
+  padding: 5px 10px;
   background-color: #1b2e44;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
 }
 
 .location-tab:hover {
@@ -142,6 +166,9 @@
 .active-location-details {
   margin-top: 8px;
   font-size: 13px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
 }
 
 .directions-link {
@@ -158,9 +185,42 @@
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .company-info {
+    grid-column: 1;
+  }
+  
+  .footer-info-column {
+    grid-column: 2;
+  }
+  
+  .locations-map-section {
+    grid-column: 1 / span 2;
+    margin-top: 20px;
+  }
+  
+  .map-container {
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .company-info,
+  .footer-info-column,
+  .locations-map-section {
+    grid-column: 1;
+  }
+  
+  .footer-section {
     text-align: center;
   }
 
@@ -173,10 +233,8 @@
   }
   
   .footer-logos {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
   .location-tabs {
@@ -184,7 +242,8 @@
   }
   
   .map-container {
-    max-width: 300px;
+    max-width: 100%;
+    height: 200px;
     margin: 0 auto 10px auto;
   }
 }

@@ -1,0 +1,54 @@
+/* / Container Styles / */
+.governance-wrapper {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+/* / Banner Styling / */
+.governance-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* / Cards Section / */
+.governance-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 10px;
+}
+
+/* / Individual Card Styling / */
+.governance-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.governance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* / Card Images / */
+.governance-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+/* / Card Text / */
+.governance-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}

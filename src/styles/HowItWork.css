@@ -1,0 +1,132 @@
+/* General Page Layout */
+.equip-dashboard {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Header */
+.equip-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.equip-logo-img {
+  width: 150px;
+}
+
+.equip-subtitle {
+  color: #2660dc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Titles */
+.equip-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.equip-description {
+  color: #4b5563;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Content Section */
+.equip-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.equip-section {
+  max-width: 450px;
+  text-align: left;
+}
+
+.equip-section-title {
+  color: #2641dc;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.equip-list {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  font-size: 1.1rem;
+}
+
+/* Image Section */
+.equip-image-container {
+  max-width: 500px;
+}
+
+.equip-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Text */
+.equip-footer-text {
+  margin-top: 2rem;
+  color: #4b5563;
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Mobile Screens */
+.equip-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.equip-image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .equip-section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .equip-section {
+    text-align: center;
+  }
+
+  .equip-list {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .equip-images {
+    gap: 0.5rem;
+  }
+
+  .equip-image {
+    width: 100px;
+  }
+}

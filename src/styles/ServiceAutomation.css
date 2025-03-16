@@ -1,0 +1,87 @@
+/* AutomationServices.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 120px;
+}
+
+.automation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Image Section */
+.automation-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.automation-logo {
+    width: 180px;
+    border-radius: 5px;
+}
+
+/* Content Section */
+.automation-content {
+    flex: 2;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.automation-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+.automation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.automation-list li {
+    font-size: 16px;
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.automation-highlight {
+    color: #3366ff;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .automation-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .automation-logo {
+        width: 70%;
+    }
+
+    .automation-title {
+        font-size: 20px;
+    }
+
+    .automation-list li {
+        font-size: 14px;
+    }
+}
