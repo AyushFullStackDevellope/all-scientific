@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/ReqServices.css';
-import Header from './common/Header';
-import Footer from './common/Footer';
 import TextField from './common/TextField';
 import TextArea from './common/TextArea';
 import Button from './common/Button';
@@ -45,7 +43,6 @@ const ReqServices = () => {
 
   return (
     <div className="req-services-container">
-      <Header />
       <div className="req-services">
         <div className="req-services-form-container">
           <Title level={2}>Request Service Form</Title>
@@ -107,7 +104,6 @@ const ReqServices = () => {
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

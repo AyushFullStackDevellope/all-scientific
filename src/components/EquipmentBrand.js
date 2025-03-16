@@ -1,15 +1,11 @@
 import React from "react";
 import "../styles/EquipmentBrand.css";
-import Header from "./common/Header.js";
-import Footer from "./common/Footer.js";
-import { categories, brands } from "../constants/EquipBrands.js";
+import { categories, brands } from "../constants/EquipbrandsData.js";
 import ListItem from "./common/ListItem.js";
 
 const EquipmentBrand = () => {
   return (
     <div className="page-wrapper">
-      <Header />
-
       <div className="content-container">
         {/* EQUIPMENT SECTION */}
         <section className="section-container">
@@ -43,8 +39,6 @@ const EquipmentBrand = () => {
           </div>
         </section>
       </div>
-
-      <Footer />
     </div>
   );
 };

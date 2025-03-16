@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/TempControll.css";
-import Header from "./common/Header.js";
-import Footer from "./common/Footer.js";
-import { equipmentData } from "../constants/TempControlltems.js";
+import { equipmentData } from "../constants/TempControlData.js";
 
 /**
  * TempControll Component
@@ -17,9 +15,6 @@ const TempControll = () => {
 
   return (
     <div className="temp-controll-container">
-      {/* Header Component */}
-      <Header />
-
       {/* Hero Banner Section */}
       <div className="hero-banner">
         <div className="banner-content">
@@ -53,9 +48,6 @@ const TempControll = () => {
           </div>
         </section>
       ))}
-
-      {/* Footer Component */}
-      <Footer />
     </div>
   );
 };

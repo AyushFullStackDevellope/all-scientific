@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Contact.css";
-import Header from "./common/Header.js";
-import Footer from "./common/Footer.js";
-import { faqItems } from "../constants/ContactItems.js";
+import { faqItems } from "../constants/ContactData.js";
 import Text from "./common/Text.js";
 import InputField from "./common/InputFields.js";
 import Button from "./common/Button";
@@ -53,8 +51,6 @@ const Contact = () => {
 
   return (
     <div className="page-container">
-      <Header />
-
       {/* Contact Section */}
       <div className="contact-container">
         <div className="header-section">
@@ -72,13 +68,49 @@ const Contact = () => {
             </h4>
             <Text><i className="fas fa-envelope"></i> Email: <a href="mailto:sales@alscientific.com">sales@alscientific.com</a></Text>
             <Text><i className="fas fa-phone"></i> Phone: <a href="tel:(718) 756 - 8100">(718) 756 - 8100</a></Text>
-            <Text><i className="fas fa-map-marker-alt"></i> 89 5th Avenue, New York City, NY 10003</Text>
+            <Text>
+              <i className="fas fa-map-marker-alt"></i>{" "}
+              <a 
+                href="https://maps.google.com/?q=89 5th Avenue, New York City, NY 10003" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                89 5th Avenue, New York City, NY 10003
+              </a>
+            </Text>
 
             <div className="business-hours">
               <h3>Locations:</h3>
-              <Text><i className="fas fa-map-marker-alt"></i> New York - 1804 Plaza Ave, New Hyde Park, NY 11040</Text>
-              <Text><i className="fas fa-map-marker-alt"></i> New Jersey - 2139 HWY 35, Holmdel, NJ 07733</Text>
-              <Text><i className="fas fa-map-marker-alt"></i> Pennsylvania - 3500 Scotts Lane, Philadelphia, PA 19129</Text>
+              <Text>
+                <i className="fas fa-map-marker-alt"></i>{" "}
+                <a 
+                  href="https://maps.google.com/?q=1804 Plaza Ave, New Hyde Park, NY 11040" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  New York - 1804 Plaza Ave, New Hyde Park, NY 11040
+                </a>
+              </Text>
+              <Text>
+                <i className="fas fa-map-marker-alt"></i>{" "}
+                <a 
+                  href="https://maps.google.com/?q=2139 HWY 35, Holmdel, NJ 07733" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  New Jersey - 2139 HWY 35, Holmdel, NJ 07733
+                </a>
+              </Text>
+              <Text>
+                <i className="fas fa-map-marker-alt"></i>{" "}
+                <a 
+                  href="https://maps.google.com/?q=3500 Scotts Lane, Philadelphia, PA 19129" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Pennsylvania - 3500 Scotts Lane, Philadelphia, PA 19129
+                </a>
+              </Text>
             </div>
           </div>
 
@@ -117,8 +149,6 @@ const Contact = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Services.css";
-import { serviceCards } from "../constants/ServicesItems.js"; // Import service card data
+import { serviceCards } from "../constants/ServicesData.js"; // Import service card data
 
 export default function HomeCards() {
   // Define animation variants for card appearance

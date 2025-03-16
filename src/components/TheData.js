@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion for animations
 import "../styles/TheData.css"; // Import external CSS for styling
-import { stats } from "../constants/TheDataItems.js";
+import { stats } from "../constants/ThedataItems.js";
 
 const TheData = () => {
   return (

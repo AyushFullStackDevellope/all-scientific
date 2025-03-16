@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/Posts.css';
-import { postsData } from '../constants/PostsItems.js';
+import { postsData } from '../constants/PostsData.js';
 
 const Posts = () => {
   // State to manage posts, including like functionality

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/MriChillers.css";
-import Footer from "./common/Footer.js";
-import Header from "./common/Header.js";
-import { mriProjects, mriServices, mriBenefits } from "../constants/MrichillersItems.js";
+import { mriProjects, mriServices, mriBenefits } from "../constants/MrichillersData.js";
 
 // Reusable ProjectCard Component
 const ProjectCard = ({ projectData }) => {
@@ -50,14 +48,10 @@ const MriChillerProjects = () => {
 
   return (
     <div className="projects-container">
-      <Header />
-
       {/* Hero Section */}
-      <div className="hero-section">
+      <div className="hero-section-mri"
+        style={{ backgroundImage: "url('/assets/images/mri-bg.avif')" }}>
         <h1 className="hero-title">MRI Chiller Installation Projects</h1>
-        <p className="hero-subtitle">
-          Specialized cooling solutions for medical imaging environments
-        </p>
       </div>
 
       {/* Main Content Section */}
@@ -108,11 +102,11 @@ const MriChillerProjects = () => {
         {/* Services Section */}
         <div className="services-section">
           <h2 className="section-title">Our Complete Chiller Services</h2>
-          <div className="services-grid">
+          <div className="services-grid-mri">
             {mriServices.map((service) => (
               <div key={service.id} className="service-card">
                 <div className="service-icon">➤</div>
-                <h3 className="service-title">{service.title}</h3>
+                <h3 className="service-title-mri">{service.title}</h3>
               </div>
             ))}
           </div>
@@ -128,8 +122,6 @@ const MriChillerProjects = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
