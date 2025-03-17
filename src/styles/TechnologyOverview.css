@@ -1,0 +1,52 @@
+.technology-wrapper {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero-banner-technology {
+    background: no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+.benefits-wrapper {
+    margin-top: 20px;
+}
+
+.benefits-wrapper h2 {
+    font-size: 1.5rem;
+    color: #0073e6;
+}
+
+.benefits-wrapper ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-wrapper ul li {
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0073e6;
+}
+
+.summary-text {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

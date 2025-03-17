@@ -1,0 +1,181 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* Main Container */
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* Adjusted width */
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    margin: 100px auto 0;
+    /* Centering with auto margin */
+}
+
+.tech-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.info-section {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+    transform: scale(1.08);
+}
+
+/* Solution Items */
+.solution-item {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    justify-content: center;
+}
+
+.solution-item::before {
+    content: '\25B6';
+    color: #0073e6;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.solution-item:hover::before {
+    transform: translateX(7px);
+}
+
+/* Images */
+img {
+    border-radius: 15px;
+    width: 200px;
+    max-width: 100%;
+    animation: fadeIn 1.2s ease-in-out;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .tech-container {
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-section {
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    .solution-item {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .tech-container {
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .info-section {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .solution-item {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

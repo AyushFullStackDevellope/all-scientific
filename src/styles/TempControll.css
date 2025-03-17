@@ -10,7 +10,7 @@
 
 /* Hero banner styling */
 .hero-banner {
-  background: linear-gradient(rgba(0, 20, 60, 0.496), rgba(0, 20, 60, 0.559)), url('../../public/assets/images/temp-bg.avif');
+  background: linear-gradient(rgba(0, 20, 60, 0.496), rgba(0, 20, 60, 0.559));
   background-size: cover;
   background-position: center;
   color: white;
