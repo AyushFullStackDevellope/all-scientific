@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/UpdatedEquipment.css";
-import equipLogo from "../Assets/Images/equip_image.png";
-import centralImage from "../Assets/Images/circal_image.avif";
+import "../../styles/UpdatedEquipment.css"; 
 
 
 const EquipmentIntelligence = () => {
@@ -9,7 +7,7 @@ const EquipmentIntelligence = () => {
     <div className="intelligence-container">
       <header className="intelligence-header">
         <div className="intelligence-logo">
-          <img src={equipLogo} alt="Equip ID Logo" />
+          <img src={ "/assets/images/equip_image.png"} alt="Equip ID Logo" />
           <p className="tagline">Giving Your Equipment a Voice</p>
         </div>
         <h1>Components Of Equipment Intelligence</h1>
@@ -26,7 +24,7 @@ const EquipmentIntelligence = () => {
         </div>
         
         <div className="intelligence-center">
-          <img src={centralImage} alt="Equip ID" />
+          <img src={ "/assets/images/circal_image.avif"} alt="Equip ID" />
         </div>
         
         <div className="intelligence-section intelligence-classroom">

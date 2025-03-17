@@ -12,7 +12,7 @@ const BioMedComponent = () => {
         <div className="biomed-page">
             {/* Hero section with background image */}
             <div className="hero-section-bio"
-                style={{ backgroundImage: `url('/assets/images/biomed-hero.avif')` }}>
+                style={{ backgroundImage: `url('/assets/images/bio-medical/biomed-hero.avif')` }}>
                 <div className="hero-content-bio">
                     <h1>Biomedical - Laboratory<br />Refrigeration - Freezers</h1>
                 </div>
@@ -45,7 +45,7 @@ const BioMedComponent = () => {
             
             {/* Repair depot section with background image */}
             <div className="repair-depot-section"
-                style={{ backgroundImage: `url('/assets/images/biomed-herobg.avif')` }}>
+                style={{ backgroundImage: `url('/assets/images/bio-medical/biomed-herobg.avif')` }}>
                 <h2>Pickup / Repair Depot Service</h2>
                 
                 <div className="feature-boxes">

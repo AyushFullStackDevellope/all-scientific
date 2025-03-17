@@ -17,15 +17,17 @@ const EthosBoard = () => {
             />
             <h3 className="member-name">{member.name}</h3>
             <div className="social-icons">
-              <a href="#" className="social-link">
-                {" "}
-                <FaFacebookF />
-              </a>
-              <a href="#" className="social-link">
-                {" "}
-                <FaLinkedinIn />
-              </a>
-            </div>{" "}
+              {member.facebookUrl && (
+                <a href={member.facebookUrl} className="social-link">
+                  <FaFacebookF />
+                </a>
+              )}
+              {member.linkedinUrl && (
+                <a href={member.linkedinUrl} className="social-link">
+                  <FaLinkedinIn />
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

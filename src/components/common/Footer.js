@@ -35,10 +35,15 @@ export default function Footer() {
         <div className="footer-container">
           {/* Company Info Section - First column */}
           <div className="footer-section company-info">
-            <img src={"/assets/images/all-logo.avif"} alt="ALL Scientific Tech" className="footer-logo" />
+            <img 
+              src={"/assets/images/footer/all-logo.avif"} 
+              alt="ALL Scientific Tech" 
+              className="footer-logo" 
+              loading="lazy"
+            />
             <p>
-              Repair, Maintain, Calibrate, and Install Bio-Medical & Laboratory
-              Refrigeration, MRI & Medical Chillers, and Temperature Controlled
+              Expert services for Repair, Maintenance, Calibration, and Installation of Bio-Medical 
+              & Laboratory Refrigeration, MRI & Medical Chillers, and Temperature Controlled
               Research Equipment.
             </p>
           </div>
@@ -48,7 +53,7 @@ export default function Footer() {
             {/* Contact Info Section */}
             <div className="footer-section contact-section">
               <h4><i className="fas fa-address-book"></i> Contact Info</h4>
-              <p><i className="fas fa-envelope"></i> Email: <a href="mailto:sales@alscientific.com">sales@alscientific.com</a></p>
+              <p><i className="fas fa-envelope"></i> Email: <a href="mailto:sales@alscientific.com"> sales@alscientific.com</a></p>
               <p><i className="fas fa-phone"></i> Phone: <a href="tel:(718) 756 - 8100"> (718) 756 - 8100</a></p>
             </div>
 
@@ -83,6 +88,7 @@ export default function Footer() {
                 className="location-map"
                 title="Office Locations"
                 allowFullScreen
+                loading="lazy"
               ></iframe>
             </div>
             
@@ -116,8 +122,18 @@ export default function Footer() {
 
         {/* Partner Logos */}
         <div className="footer-logos">
-          <img src={"/assets/images/nlra-logo-footer.avif"} alt="Eco Certification" className="partner-logo" />
-          <img src={"/assets/images/footer-logo.avif"} alt="NLRA Logo" className="partner-logo" />
+          <img 
+            src={"/assets/images/footer/nlra-logo-footer.avif"} 
+            alt="Eco Certification" 
+            className="partner-logo" 
+            loading="lazy"
+          />
+          <img 
+            src={"/assets/images/footer/footer-logo.avif"} 
+            alt="NLRA Logo" 
+            className="partner-logo" 
+            loading="lazy"
+          />
         </div>
       </div>
 

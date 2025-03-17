@@ -22,19 +22,22 @@ const ManagementTeam = () => {
                 <p className="member-email">{member.email}</p>
                 {member.phone && <p className="member-phone">{member.phone}</p>}
                 <div className="member-icons">
-                  <a href="#" className="member-social-link facebook">
-                    <FaFacebook />
-                  </a>
-                  <a href="#" className="member-social-link linkedin">
-                    <FaLinkedin />
-                  </a>
+                  {member.facebookUrl && (
+                    <a href={member.facebookUrl} className="member-social-link facebook">
+                      <FaFacebook />
+                    </a>
+                  )}
+                  {member.linkedinUrl && (
+                    <a href={member.linkedinUrl} className="member-social-link linkedin">
+                      <FaLinkedin />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
- 
     </div>
   );
 };

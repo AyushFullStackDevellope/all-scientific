@@ -68,6 +68,7 @@ const AnimatedAgreementsComponent = () => {
       </div>
     );
   };
+  // Render the component
 
   return (
     <div>
@@ -124,6 +125,8 @@ const AnimatedAgreementsComponent = () => {
             </div>
           </>
         ) : (
+          // DETAILED AGREEMENT VIEW
+          // Render the detailed agreement content
           <div className="detailed-agreement-content">
             <div className={`${selectedAgreement.id}-content`}>
               <div className="content-wrapper">
@@ -139,7 +142,7 @@ const AnimatedAgreementsComponent = () => {
                 )}
               </div>
             </div>
-
+            {/* BACK BUTTON */}
             <div className="button-container">
               <button onClick={handleBack} className="back-btn">
                 Back to Agreements

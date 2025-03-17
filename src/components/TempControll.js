@@ -16,7 +16,8 @@ const TempControll = () => {
   return (
     <div className="temp-controll-container">
       {/* Hero Banner Section */}
-      <div className="hero-banner">
+      <div className="hero-banner"
+        style={{ backgroundImage: "url('/assets/images/temp-control/temp-bg.avif')" }}>
         <div className="banner-content">
           <h1>Temperature Controlled Laboratory Equipment</h1>
         </div>

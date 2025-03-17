@@ -9,7 +9,7 @@ export const postsData = [
         views: 37,
         comments: 0,
         likes: 1,
-        image: "/assets/images/post-one.webp",
+        image: "/assets/images/posts/post-one.webp",
         isLiked: false
       },
       {
@@ -22,20 +22,7 @@ export const postsData = [
         views: 47,
         comments: 4,
         likes: 1,
-        image: "/assets/images/post-three.webp",
-        isLiked: false
-      },
-      {
-        id: 3,
-        title: "ALL Scientific's New Office Opens",
-        description: "ALL Scientific's New Office Opens",
-        author: "Steven Gottfried",
-        date: "May 12, 2024",
-        readTime: "1 min read",
-        views: 52,
-        comments: 5,
-        likes: 1,
-        image: "/assets/images/post-four.webp",
+        image: "/assets/images/posts/post-three.webp",
         isLiked: false
       },
       {
@@ -48,7 +35,7 @@ export const postsData = [
         views: 52,
         comments: 6,
         likes: 1,
-        image: "/assets/images/post-two.webp",
+        image: "/assets/images/posts/post-two.webp",
         isLiked: false
       },
       {
@@ -61,7 +48,7 @@ export const postsData = [
         views: 1,
         comments: 0,
         likes: 1,
-        image: "/assets/images/post-five.webp",
+        image: "/assets/images/posts/post-five.webp",
         isLiked: false
       },
       {
@@ -74,7 +61,7 @@ export const postsData = [
         views: 52,
         comments: 6,
         likes: 1,
-        image: "/assets/images/post-six.webp",
+        image: "/assets/images/posts/post-six.webp",
         isLiked: false
       },
       {
@@ -87,7 +74,7 @@ export const postsData = [
         views: 52,
         comments: 6,
         likes: 1,
-        image: "/assets/images/post-seven.webp",
+        image: "/assets/images/posts/post-seven.webp",
         isLiked: false
       },
       {
@@ -100,7 +87,20 @@ export const postsData = [
         views: 52,
         comments: 6,
         likes: 1,
-        image: "/assets/images/post-eight.webp",
+        image: "/assets/images/posts/post-eight.webp",
+        isLiked: false
+      },
+      {
+        id: 3,
+        title: "ALL Scientific's New Office Opens",
+        description: "ALL Scientific's New Office Opens",
+        author: "Steven Gottfried",
+        date: "May 12, 2024",
+        readTime: "1 min read",
+        views: 52,
+        comments: 5,
+        likes: 1,
+        image: "/assets/images/posts/post-four.webp",
         isLiked: false
       },
       {
@@ -113,9 +113,9 @@ export const postsData = [
         views: 52,
         comments: 6,
         likes: 1,
-        image: "/assets/images/post-nine.webp",
+        image: "/assets/images/posts/post-nine.webp",
         isLiked: false
-      } 
-    // Add remaining posts here...
-  ];
-  
+      },
+      // Add remaining posts here...
+    ];
+    

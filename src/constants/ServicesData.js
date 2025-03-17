@@ -1,7 +1,7 @@
 export const serviceCards = [
     { 
       title: "★ Repair",
-      image: "./assets/images/card-image-one.avif",
+      image: "/assets/images/services/card-image-one.avif",
       description: "Laboratory equipment repair.",
       services: [
         "Initial Assessment",
@@ -15,7 +15,7 @@ export const serviceCards = [
     },
     {
       title: "★ Maintenance",
-      image: "/assets/images/card-image-two.avif",
+      image: "/assets/images/services/card-image-two.avif",
       description: "Proper maintenance extends equipment lifespan and reduces failures.",
       services: [
         "Reduce Utility Usage",
@@ -28,7 +28,7 @@ export const serviceCards = [
     },
     {
       title: "★ Installations",
-      image: "/assets/images/card-image-three.avif",
+      image: "/assets/images/services/card-image-three.avif",
       description: "Comprehensive laboratory installations.",
       services: [
         "Assessment",

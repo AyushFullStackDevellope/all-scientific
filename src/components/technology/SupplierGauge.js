@@ -1,13 +1,12 @@
 import React from "react";
-import "../styles/SupplierGauge.css";
-import SupplierGaugeLogo from "../Assets/Images/SupplierGauge_logo.avif"; // Replace with your actual image path
+import "../../styles/SupplierGauge.css";
 
 const SupplierGauge = () => {
   return (
     <div className="supplier-container">
       {/* Header Section */}
       <header className="supplier-header">
-        <img src={SupplierGaugeLogo} alt="Supplier Gauge Logo" className="supplier-logo" />
+        <img src={ "/assets/images/SupplierGauge_logo.avif"} alt="Supplier Gauge Logo" className="supplier-logo" />
         <h1 className="supplier-title">Simplifying Business Reviews, Amplifying Success</h1>
         <p className="supplier-subtitle">
           <strong>

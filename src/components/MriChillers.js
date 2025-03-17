@@ -50,7 +50,7 @@ const MriChillerProjects = () => {
     <div className="projects-container">
       {/* Hero Section */}
       <div className="hero-section-mri"
-        style={{ backgroundImage: "url('/assets/images/mri-bg.avif')" }}>
+        style={{ backgroundImage: "url('/assets/images/mri-chillers/mri-bg.avif')" }}>
         <h1 className="hero-title">MRI Chiller Installation Projects</h1>
       </div>
 
@@ -92,7 +92,7 @@ const MriChillerProjects = () => {
           <h2 className="section-title">Repair - Maintenance - Installation</h2>
           <div className="diagram-container">
             <img
-              src="/assets/images/mri-chillers-dig.avif"
+              src="/assets/images/mri-chillers/mri-chillers-dig.avif"
               alt="MRI Chiller System Diagram"
               className="system-diagram"
             />

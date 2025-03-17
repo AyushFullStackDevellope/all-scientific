@@ -15,14 +15,14 @@
  */
 const rpmAgreement = {
   id: "rpm",
-  logo: "/assets/images/rpm-img.avif",
+  logo: "/assets/images/agreement/rpm-img.avif",
   title: "Recurring Planned Maintenance",
   details: {
     subtitle: "Revolutionizing Equipment Maintenance with AST's RPM Program",
     description:
       "At All Scientific Technology (AST), proactive maintenance is essential for maximizing equipment performance, longevity, and compliance...",
     heroSection: {
-      image: "/assets/images/rpm-hero.avif",
+      image: "/assets/images/agreement/rpm-hero.avif",
       text: "Recurring Planned Maintenance Agreement",
     },
     // Content sections
@@ -82,14 +82,14 @@ const rpmAgreement = {
  */
 const trinityAgreement = {
   id: "trinity",
-  logo: "/assets/images/trinity-img.avif",
+  logo: "/assets/images/agreement/trinity-img.avif",
   title: "Extended Warranty Coverage",
   details: {
     subtitle: "Comprehensive Protection for Your Laboratory Equipment",
     description:
       "All Scientific Technology (AST) offers comprehensive protection for out-of-warranty and extended service agreements for in-warranty equipment through our Trinity Warranty Company Certification.",
     heroSection: {
-      image: "/assets/images/trinity-hero.avif",
+      image: "/assets/images/agreement/trinity-hero.avif",
       text: "FullCoverage(Parts - Labor) Agreement Powered by Trinity Warranty",
     },
     // Content sections
@@ -166,14 +166,14 @@ const trinityAgreement = {
  */
 const laborAgreement = {
   id: "labor",
-  logo: "/assets/images/labor-agreement.avif",
+  logo: "/assets/images/agreement/labor-agreement.avif",
   title: "Labor Coverage Agreement",
   details: {
     subtitle: "All Scientific Technology Fixed-Cost",
     description:
       "Partnering with All Scientific Technology (AST) under a fixed-cost labor coverage agreement provides organizations with a highly efficient and cost-effective approach to equipment maintenance and repair. This agreement ensures predictable budgeting, reduces unexpected repair costs, and maximizes equipment uptime.",
     heroSection: {
-      image: "/assets/images/labor-hero.avif",
+      image: "/assets/images/agreement/labor-hero.avif",
       text: "Labor Coverage Agreement",
     },
     // Content sections

@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       <div className="exp-container">
         <div className="exp-content">
           <img
-            src={("/assets/images/experience-img.avif")}
+            src={("/assets/images/about/experience-img.avif")}
             alt="Lab Equipment"
             className="exp-image"
           />

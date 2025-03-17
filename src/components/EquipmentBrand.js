@@ -8,8 +8,10 @@ const EquipmentBrand = () => {
     <div className="page-wrapper">
       <div className="content-container">
         {/* EQUIPMENT SECTION */}
+        {/* EQUIPMENT items */}
         <section className="section-container">
-          <div className="section-hero equipment-hero">
+          <div className="section-hero equipment-hero"
+          style={{ backgroundImage: "url('/assets/images/equipment-brands/equip-bg.avif')" }}>
             <div className="overlay">
               <h1>Equipment Categories</h1>
               <p>Advanced solutions for laboratory and medical applications</p>
@@ -24,8 +26,10 @@ const EquipmentBrand = () => {
         </section>
 
         {/* BRANDS SECTION */}
+        {/* BRANDS items */}
         <section className="section-container">
-          <div className="section-hero brands-hero">
+          <div className="section-hero brands-hero"
+          style={{ backgroundImage: "url('/assets/images/equipment-brands/brand-bg.avif')" }}>
             <div className="overlay">
               <h1>Brands</h1>
               <p>Trusted manufacturers of high-quality laboratory equipment</p>

@@ -1,13 +1,12 @@
 import React from "react";
-import "../styles/LogBook.css";
-import RepairProLogo from "../Assets/Images/Repairprologbook_logo.avif";
+import "../../styles/LogBook.css";
 
 const LogBookPage = () => {
   return (
     <div className="logbook-container">
       {/* Header */}
       <header className="logbook-header">
-        <img src={RepairProLogo} alt="RepairPro-LogBook Logo" className="logbook-logo" />
+        <img src={ "/assets/images/Repairprologbook_logo.avif"} alt="RepairPro-LogBook Logo" className="logbook-logo" />
         <p className="logbook-intro">
           <a href="#">AI Scientific</a> has created an essential tool for laboratory repair technicians in the
           RepairProLogBook application for easy access to their skills, experience, work, and technical/professional

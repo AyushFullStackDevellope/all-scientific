@@ -1,5 +1,15 @@
 import React from "react";
 import "../../styles/OurTechnology.css";
+import TechnologyOverview from "./TechnologyOverview.js";
+import TechSolutions from "./TechSolutions.js";
+import UtilizeCoreSection from "./UtilizeCore.js";
+import EquipmentSection from "./EquipIdOne.js";
+import EquipmentIntelligence from "./UpdatedEquipment.js";
+import TechAccess from "./TecniciansAccess.js";
+import HowItWork from "./HowItWork.js";
+import IntegrationParts from "./IntegrationParts.js";
+import LogBookPage from "./LogBook.js";
+import SupplierGauge from "./SupplierGauge.js";
 
 const OurTechnology = () => {
   return (
@@ -59,7 +69,16 @@ const OurTechnology = () => {
           continuous improvement, ensuring their peace of mind.
         </p>
       </div>
-
+      <TechnologyOverview />
+      <TechSolutions />
+      <UtilizeCoreSection />
+      <EquipmentSection />
+      <EquipmentIntelligence />
+      <TechAccess />
+      <HowItWork />
+      <IntegrationParts />
+      <LogBookPage />
+      <SupplierGauge />
     </div>
   );
 };

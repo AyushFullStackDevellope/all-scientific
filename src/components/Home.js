@@ -116,7 +116,7 @@ const MedicalServicesLandingPage = () => {
           </div>
           <div className="card-image">
             <img
-              src="./assets/images/24-hours_edited.avif"
+              src="/assets/images/home/24-hours_edited.avif"
               alt="Service 24/7 365"
             />
           </div>
@@ -130,7 +130,7 @@ const MedicalServicesLandingPage = () => {
           </div>
           <div className="card-image">
             <img
-              src="./assets/images/quality-control.avif"
+              src="/assets/images/home/quality-control.avif"
               alt="Factory Trained Technicians"
             />
           </div>
@@ -144,7 +144,7 @@ const MedicalServicesLandingPage = () => {
           </div>
           <div className="card-image">
             <img
-              src="./assets/images/spare-parts.avif"
+              src="/assets/images/home/spare-parts.avif"
               alt="Fully Stocked Inventory"
             />
           </div>
@@ -158,7 +158,7 @@ const MedicalServicesLandingPage = () => {
           </div>
           <div className="card-image">
             <img
-              src="./assets/images/management.avif"
+              src="/assets/images/home/management.avif"
               alt="Proprietary Technology"
             />
           </div>
@@ -169,7 +169,7 @@ const MedicalServicesLandingPage = () => {
         <div className="row align-items-center">
           <div className="col-md-6">
             <img
-              src="./assets/images/home-img.avif"
+              src="/assets/images/home/home-img.avif"
               alt="Service Image"
               className="img-fluid rounded imgres"
               style={{ width: "30vw" }}

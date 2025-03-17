@@ -9,7 +9,7 @@ const EthosPartnership = () => {
       <div className="ethos-cards">
         <div className="ethos-card">
           <img
-            src={"/assets/images/mergers.avif"}
+            src={"/assets/images/about/mergers.avif"}
             alt="Mergers"
             className="ethos-icon"
           />
@@ -19,7 +19,7 @@ const EthosPartnership = () => {
 
         <div className="ethos-card">
           <img
-            src={"/assets/images/expertise.avif"}
+            src={"/assets/images/about/expertise.avif"}
             alt="Expertise"
             className="ethos-icon"
           />
@@ -29,7 +29,7 @@ const EthosPartnership = () => {
 
         <div className="ethos-card">
           <img
-            src={"/assets/images/networking.avif"}
+            src={"/assets/images/about/networking.avif"}
             alt="Network"
             className="ethos-icon"
           />

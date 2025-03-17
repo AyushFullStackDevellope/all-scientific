@@ -182,10 +182,10 @@ const Header = ({ scrollToSection, refs }) => {
       <div className="logo">
         <a onClick={(e) => { e.preventDefault(); handleSectionNavigation('main'); }}>
           <img 
-            src="../assets/images/all-logo.avif" 
+            src="/assets/images/header/all-logo.avif" 
             alt="Logo" 
             onError={(e) => {
-              e.target.src = "../assets/images/fallback-logo.png";
+              e.target.src = "/assets/images/header/fallback-logo.png";
               e.target.onerror = null;
             }}
           />

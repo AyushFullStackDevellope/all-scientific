@@ -1,34 +1,28 @@
 import React from "react";
-import "../styles/EquipIdOne.css";
-import equipLogo from "../Assets/Images/equip_image.png";
-import EquipmentImage from "../Assets/Images/equipment.avif";
+import "../../styles/EquipIdOne.css";
 
 
-const EquipIDSectionOne = () => {
+const EquipmentSection = () => {
   return (
-    <div className="equip-container">
-      <div className="equip-sidebar">
-        <img src={equipLogo} alt="Equip ID Logo" className="logo" />
-        <p className="tagline">Giving Your Equipment a Voice</p>
+    <div className="equipment-wrapper">
+      <div className="equipment-sidebar">
+        <img src={"/assets/images/equip_image.png"} alt="Equip Logo" className="equipment-logo" />
+        <h2 className="tagline">Empowering Equipment with Intelligence</h2>
       </div>
-      <div className="equip-content">
+      <div className="equipment-content">
         <p className="description">
-          ALL Scientific subscribes to Equip ID to deliver equipment-specific
-          data and supportive content{" "}
-          <span className="highlight">(Equipment Intelligence)</span> to
-          customers and service technicians. ALL Scientific's technicians are
-          certified Tagnicians, enabling them to install Equip ID Tags.
+          ALL Scientific provides equipment-specific data and support through 
+          Equip ID. Our certified technicians install Equip ID Tags, ensuring 
+          seamless tracking and maintenance.
         </p>
-        <p className="bold-text">
-          The Right Intelligence to the Right Person at the Right Time optimizes
-          compliance, inspection, testing, maintenance, and repair services for
-          critical laboratory equipment.
+        <p className="highlight-text">
+          The right information, at the right time, for optimized equipment 
+          maintenance and compliance.
         </p>
-        <img src={EquipmentImage} alt="Equipment" className="equipment-image" />
+        <img src={"/assets/images/equipment.avif"} alt="Equipment" className="equipment-image" />
       </div>
     </div>
-
   );
 };
 
-export default EquipIDSectionOne;
+export default EquipmentSection;

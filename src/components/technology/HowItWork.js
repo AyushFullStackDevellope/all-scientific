@@ -1,15 +1,12 @@
 import React from "react";
-import "../styles/HowItWork.css";
-import EquipIdLogo from "../Assets/Images/equip_image.png";
-import DashboardImage from "../Assets/Images/Dashboard.avif";
-import MobileImage from "../Assets/Images/mobiles.avif";
+import "../../styles/HowItWork.css";
 
 const HowItWork = () => {
   return (
     <div className="equip-dashboard">
       {/* Header Section */}
       <header className="equip-header">
-        <img src={EquipIdLogo} alt="Equip ID Logo" className="equip-logo-img" />
+        <img src={"/assets/images/equip_image.png"} alt="Equip ID Logo" className="equip-logo-img" />
         <span className="equip-subtitle">Giving Your Equipment a Voice</span>
       </header>
 
@@ -39,7 +36,7 @@ const HowItWork = () => {
         {/* Image Section */}
         <div className="equip-image-container">
           <img
-            src={DashboardImage}
+            src={ "/assets/images/Dashboard.avif"}
             alt="Dashboard"
             className="equip-main-image"
           />
@@ -54,7 +51,7 @@ const HowItWork = () => {
 
       {/* Mobile Screens */}
       <div className="equip-images">
-        <img src={MobileImage} alt="Mobile Screen 1" className="equip-image" />
+        <img src={"/assets/images/mobiles.avif"} alt="Mobile Screen 1" className="equip-image" />
       </div>
     </div>
   );
