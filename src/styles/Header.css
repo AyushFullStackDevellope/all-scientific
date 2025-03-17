@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 80px;
   background: linear-gradient(135deg, #001932, #004080, #0077cc);
@@ -32,6 +32,7 @@
 .logo img {
   height: 130px;
   transition: height 0.3s ease;
+  margin-left: 11rem;
 }
 
 .header.scrolled .logo img {
@@ -103,9 +104,14 @@
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
-
+@media screen and (min-width: 775px) and (max-width: 1463px){
+  .logo img {
+    margin-left: 0;
+    height: 100px;
+  }
+}
 /* Show dropdown menu on hover with delay for desktop */
-@media (min-width: 769px) {
+@media (min-width: 769px)  {
   .dropdown.hover-active .dropdown-content {
     display: block;
     opacity: 1;
@@ -179,6 +185,7 @@
   
   .logo img {
     height: 60px;
+    margin-left: 0;
   }
 
   /* Modern circular menu toggle */

@@ -132,11 +132,11 @@
   color: white;
   width: 100%;
   max-width: 1000px;
-  padding: 2.5rem;
+  padding: 2rem;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.243);
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -147,14 +147,36 @@
 @media screen and (min-width: 1280px) and (max-width: 1463px) {
   #home {
     height: auto;
-    padding-top: 7rem;
+    padding-top: 2rem;
+    min-height: 80vh;
+  }
+  
+  .content {
+    max-width: 85%;
+    padding: 2rem;
+    height: 80vh;
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+/* For MacBook Pro and similar screens */
+@media screen and (min-width: 1400px) and (max-width: 1763px) {
+  #home {
+    height: auto;
     min-height: 100vh;
   }
   
   .content {
     max-width: 85%;
     padding: 2rem;
-    height: 50vh;
+    padding-top: 2rem;
+    height: 80vh;
   }
   
   .main-heading {
@@ -167,16 +189,16 @@
 }
 
 /* For smaller laptops */
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1020px) and (max-width: 1399px) {
   #home {
     height: auto;
-    min-height: 90vh;
+    min-height: 100vh;
   }
   
   .content {
     max-width: 90%;
     padding: 2rem;
-    height: 50vh;
+    height: 60vh;
   }
   
   .main-heading {
