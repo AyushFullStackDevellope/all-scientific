@@ -21,15 +21,6 @@ const Header = ({ scrollToSection, refs }) => {
     }
   };
 
-  // Toggle dropdown menu (only needed for mobile)
-  const toggleDropdown = (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      e.stopPropagation();
-      setIsDropdownOpen(!isDropdownOpen);
-    }
-  };
-
   // Check if the current path matches the link
   const isActive = (path) => {
     return location.pathname === path;
@@ -43,7 +34,8 @@ const Header = ({ scrollToSection, refs }) => {
   useEffect(() => {
     // Handle clicks outside the menu to close it
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (menuRef.current && !menuRef.current.contains(event.target) && 
+          !event.target.closest('.hamburger')) {
         setIsMenuOpen(false);
       }
       
@@ -193,7 +185,7 @@ const Header = ({ scrollToSection, refs }) => {
       </div>
       
       {/* Navigation Menu */}
-      <nav className="nav-menu" ref={menuRef}>
+      <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`} ref={menuRef}>
         <ul className={isMenuOpen ? "show" : ""}>
           <li className="home-link">
             <a 
@@ -237,7 +229,7 @@ const Header = ({ scrollToSection, refs }) => {
           </li>
           <li className={`dropdown ${isDropdownOpen ? "open" : ""}`} ref={dropdownRef}>
             {/* Dropdown toggle button */}
-            <a className="dropbtn" onClick={toggleDropdown}>
+            <a className="dropbtn" onMouseDown={(e) => { e.preventDefault(); setIsDropdownOpen(!isDropdownOpen); }}>
               More
             </a>
             {/* Dropdown content - will show on hover for desktop */}
