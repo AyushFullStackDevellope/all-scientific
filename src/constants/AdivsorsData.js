@@ -7,7 +7,7 @@ export const advisors = [
   },
   {
     name: "Serge Lubensky",
-    image:  ("/assets/images/about/Serge-Lubensky.png"),
+    image:  ("/assets/images/about/Serge-Lubensky.png" ),
   },
   {
     name: "Anthony Vicari",

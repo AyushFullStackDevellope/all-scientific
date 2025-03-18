@@ -3,7 +3,7 @@ export const teamMembers = [
   {
     name: "Steven Gottfried",
     role: "Managing Director",
-    email: "mailto:steven@alscientific.com",
+    email: "steven@alscientific.com",
     phone: "516 365 1511",
     image:  ("/assets/images/about/stiven-gottfried-img-two.avif"),
     facebookUrl: "https://www.facebook.com/wix",
@@ -12,7 +12,7 @@ export const teamMembers = [
   {
     name: "Scott Schneider",
     role: "CFO",
-    email: "mailto:scott@alscientific.com",
+    email: "scott@alscientific.com",
     image:  ("/assets/images/about/scott-image-one.avif"),
     facebookUrl: "https://www.facebook.com/scottschneider",
     linkedinUrl: "https://www.linkedin.com/in/scott-schneider"
@@ -20,7 +20,7 @@ export const teamMembers = [
   {
     name: "Eric Schechter",
     role: "Business Development",
-    email: "mailto:eric@alscientific.com",
+    email: "eric@alscientific.com",
     phone: "516 584 0000",
     image:  ("/assets/images/about/Eric-Schechter.avif"),
     facebookUrl: "https://www.facebook.com/ericschechter",
@@ -29,7 +29,7 @@ export const teamMembers = [
   {
     name: "Frank Fava",
     role: "Director of Operations",
-    email: "mailto:frank@alscientific.com",
+    email: "frank@alscientific.com",
     phone: "516 584 0045",
     image:  ("/assets/images/about/FrankFava.avif"),
     facebookUrl: "https://www.facebook.com/frankfava",
@@ -38,7 +38,7 @@ export const teamMembers = [
   {
     name: "Peter Fava",
     role: "Director of Technical Support",
-    email: "mailto:peter@alscientific.com",
+    email: "peter@alscientific.com",
     image:  ("/assets/images/about/Peter-Fava.avif"),
     facebookUrl: "https://www.facebook.com/peterfava",
     linkedinUrl: "https://www.linkedin.com/in/peter-fava"
@@ -46,7 +46,7 @@ export const teamMembers = [
   {
     name: "Frank Depetro",
     role: "Procurement Manager",
-    email: "mailto:frankd@alscientific.com",
+    email: "frankd@alscientific.com",
     phone: "516 584 0044",
     image:  ("/assets/images/about/Frank-Depetro.avif"),
     facebookUrl: "https://www.facebook.com/frankdepetro",
@@ -55,7 +55,7 @@ export const teamMembers = [
   {
     name: "Rose Bravo",
     role: "Client Success",
-    email: "mailto:rose@alscientific.com",
+    email: "rose@alscientific.com",
     phone: "516 584 0046",
     image:  ("/assets/images/about/Rose-Bravo.avif"),
     facebookUrl: "https://www.facebook.com/rosebravo",
@@ -64,7 +64,7 @@ export const teamMembers = [
   {
     name: "Jesse Melendez",
     role: "Contract Manager",
-    email: "mailto:jesse@alscientific.com",
+    email: "jesse@alscientific.com",
     phone: "516 584 0047",
     image:  ("/assets/images/about/Jesse-Melendez.avif"),
     facebookUrl: "https://www.facebook.com/jessemelendez",
@@ -73,7 +73,7 @@ export const teamMembers = [
   {
     name: "David Roozrokh",
     role: "Accounting Manager",
-    email: "mailto:david@alscientific.com",
+    email: "david@alscientific.com",
     phone: "516 584 0043",
     image:  ("/assets/images/about/David-Roozrokh.avif"),
     facebookUrl: "https://www.facebook.com/davidroozrokh",
@@ -82,7 +82,7 @@ export const teamMembers = [
   {
     name: "Tom Murphy",
     role: "Warehouse Manager",
-    email: "mailto:tom@alscientific.com",
+    email: "tom@alscientific.com",
     image:  ("/assets/images/about/Tom-Murphy.avif"),
     facebookUrl: "https://www.facebook.com/tommurphy",
     linkedinUrl: "https://www.linkedin.com/in/tommurphycio/"
