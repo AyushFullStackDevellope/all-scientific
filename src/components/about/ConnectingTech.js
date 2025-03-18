@@ -1,4 +1,7 @@
 import React from "react";
+import Heading from "../common/Heading";
+import Text from "../common/Text";
+import Image from "../common/Image";
 
 const ConnectingTechnology = () => {
   return (
@@ -8,15 +11,15 @@ const ConnectingTechnology = () => {
         className="relative bg-cover bg-center h-64 flex items-center justify-center text-white text-3xl font-bold"
         style={{ backgroundImage: "url('https://via.placeholder.com/1500')" }}
       >
-        Connecting Technology
+        <Heading level={1} className="text-white">Connecting Technology</Heading>
       </div>
 
       {/* Content Section */}
       <div className="max-w-6xl mx-auto p-8">
-        <p className="text-gray-700 mb-6">
+        <Text className="text-gray-700 mb-6">
           All Scientific Tech’s dedication to contemporary technology
           distinguishes it from its competitors...
-        </p>
+        </Text>
         <ul className="list-disc pl-6 text-gray-700">
           <li>Enhancing Service Awareness</li>
           <li>Reducing the Cost of Ownership</li>
@@ -28,7 +31,7 @@ const ConnectingTechnology = () => {
       {/* Technology List */}
       <div className="bg-white py-12">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">Connecting Technology</h2>
+          <Heading level={2} className="text-2xl font-bold mb-4">Connecting Technology</Heading>
           <ul className="text-blue-600 space-y-2">
             <li>UtilizeCore: Service Automation</li>
             <li>Equip ID: Equipment Intelligence</li>
@@ -41,11 +44,11 @@ const ConnectingTechnology = () => {
 
       {/* UtilizeCore Details */}
       <div className="max-w-6xl mx-auto p-8">
-        <h3 className="text-xl font-bold mb-4">UtilizeCore</h3>
-        <p className="text-gray-700 mb-6">
+        <Heading level={3} className="text-xl font-bold mb-4">UtilizeCore</Heading>
+        <Text className="text-gray-700 mb-6">
           All Scientific Tech also enhances its UtilizeCore’s functionalities...
-        </p>
-        <img
+        </Text>
+        <Image
           src="https://via.placeholder.com/600"
           alt="UtilizeCore"
           className="mx-auto"

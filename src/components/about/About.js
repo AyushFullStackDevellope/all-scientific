@@ -7,23 +7,25 @@ import ManagementTeam from "./ManagementTeam";
 import Advisors from "./Advisors";
 import MarketMechanisms from "./MarketMechanisms"; 
 import Locations from "./Locations";
+import Heading from "../common/Heading";
+import Text from "../common/Text";
 
 const AboutHome = () => {
   return (
     <div className="info-container">
       <section className="info-banner">
         <div className="info-overlay fade-in">
-          <h1 className="info-title">About Us</h1>
-          <h2 className="info-subtitle">
+          <Heading level={1} className="info-title">About Us</Heading>
+          <Heading level={2} className="info-subtitle">
             Building Stronger, Healthier Relationships in Science
-          </h2>
-          <p className="first-text">
+          </Heading>
+          <Text className="first-text">
             At All Scientific, we are more than just equipment repair. Our
             mission is to empower the scientific community by ensuring that
             faulty equipment never hinders groundbreaking research. With a
             dedication to quality and precision, we provide innovative solutions
             that make a lasting impact.
-          </p>
+          </Text>
         </div>
       </section>
       <ExperienceSection />

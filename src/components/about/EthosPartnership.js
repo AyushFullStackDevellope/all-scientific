@@ -1,41 +1,34 @@
 import React from "react";
 import "../../styles/EthosPartnership.css";
+import Heading from "../common/Heading";
+import Text from "../common/Text";
+import ImageComponent from "../common/ImageComponent.js";
+import { partnershipData } from "../../constants/EthosPartnershipData.js";
 
 const EthosPartnership = () => {
+
+
   return (
     <div className="ethos-container">
-      <h2 className="ethos-title">Ethos Partnership</h2>
-      {/* New Section */}
+      {/* Section Title */}
+      <Heading level={2} className="ethos-title">
+        Ethos Partnership
+      </Heading>
+
+      {/* Partnership Cards Section */}
       <div className="ethos-cards">
-        <div className="ethos-card">
-          <img
-            src={"/assets/images/about/mergers.avif"}
-            alt="Mergers"
-            className="ethos-icon"
-          />
-          <h3>Mergers & Acquisition</h3>
-          <p>Sourcing, Financing, and Transition</p>
-        </div>
-
-        <div className="ethos-card">
-          <img
-            src={"/assets/images/about/expertise.avif"}
-            alt="Expertise"
-            className="ethos-icon"
-          />
-          <h3>Expertise & Guidance</h3>
-          <p>Strategic guidance and operational expertise</p>
-        </div>
-
-        <div className="ethos-card">
-          <img
-            src={"/assets/images/about/networking.avif"}
-            alt="Network"
-            className="ethos-icon"
-          />
-          <h3>Network & Connections</h3>
-          <p>Extensive networks and connections</p>
-        </div>
+        {partnershipData.map((item, index) => (
+          <div key={index} className="ethos-card">
+            {/* Card Image */}
+            <ImageComponent src={item.image} alt={item.alt} className="ethos-icon" />
+            
+            {/* Card Title */}
+            <Heading level={3}>{item.title}</Heading>
+            
+            {/* Card Description */}
+            <Text>{item.description}</Text>
+          </div>
+        ))}
       </div>
     </div>
   );
