@@ -38,10 +38,12 @@
 .equipment-hero {
   padding-top: 60px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  width:100%;
 }
 
 .brands-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
 }
 
 .section-hero .overlay {
@@ -51,18 +53,18 @@
   width: 100%;
 }
 
-.section-hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.section-hero p {
-  font-size: 1.1rem;
-  margin: 0;
-  opacity: 0.9;
-}
-
+.section-hero title {
+  font-size: 5rem; /* Adjust if needed */
+  font-weight: 700;
+  color: var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0; /* Remove unexpected spacing */
+  padding: 0.5rem 1rem; /* Add controlled padding */
+  padding-top: 5rem;
+  width: 100%;
+  max-width: 800px;
+ } /* Ensure it doesn’t stretc
+  
 /* Common grid styling for both sections */
 .grid-container {
   background-color: white;

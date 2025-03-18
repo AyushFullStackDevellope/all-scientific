@@ -235,7 +235,7 @@
   font-weight: 600;
 }
 /* Hero Section */
-.hero-section {
+.hero-section-agreement {
   height: 300px;
   width: 50%; /* Set width to 50% */
   margin: 0 auto; /* Center the hero section */
@@ -264,6 +264,7 @@
   font-size: 32px;
   font-weight: 700;
   text-align: center;
+  padding-top: 0px;
   width: 100%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
