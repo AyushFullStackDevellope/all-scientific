@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/MriChillers.css";
 import { mriProjects, mriServices, mriBenefits } from "../constants/MrichillersData.js";
+import Heading from "../components/common/Heading";
+import Text from "../components/common/Text";
+import Icon from "../components/common/Icon";
 
 // Reusable ProjectCard Component
 const ProjectCard = ({ projectData }) => {
@@ -31,7 +34,7 @@ const ProjectCard = ({ projectData }) => {
           </div>
         </div>
         <div className="project-info">
-          <h3 className="project-location">{projectData.location}</h3>
+          <Heading level={3} className="project-location">{projectData.location}</Heading>
         </div>
       </div>
     </div>
@@ -51,37 +54,37 @@ const MriChillerProjects = () => {
       {/* Hero Section */}
       <div className="hero-section-mri"
         style={{ backgroundImage: "url('/assets/images/mri-chillers/mri-bg.avif')" }}>
-        <h1 className="hero-title">MRI Chiller Installation Projects</h1>
+        <Heading level={1} className="hero-title">MRI Chiller Installation Projects</Heading>
       </div>
 
       {/* Main Content Section */}
       <section className="content-section">
         {/* Info Section */}
         <div className="info-section">
-          <h2 className="section-title">Why MRI Chillers Are Essential</h2>
-          <p className="info-text">
+          <Heading level={2} className="section-title">Why MRI Chillers Are Essential</Heading>
+          <Text className="info-text">
             When patient care requires medical imaging, it is essential that the
             equipment is fully functional and supported by a reliable cooling
             system. Utilizing a chiller is crucial for cooling and maintaining
             the specific temperatures of MRI components.
-          </p>
-          <p className="info-text">
+          </Text>
+          <Text className="info-text">
             One of the key functions of the chiller is to cool the coldhead, an
             important mechanical component that recondenses helium gas back into
             a liquid after it has cooled the MRI magnet. This process prevents
             helium from evaporating, keeps the magnet at the required
             temperature, and helps avoid magnet quench.
-          </p>
+          </Text>
         </div>
 
         {/* Benefits Section */}
         <div className="benefits-section">
-          <h2 className="section-title">Key Benefits</h2>
+          <Heading level={2} className="section-title">Key Benefits</Heading>
           <ul className="benefits-list">
             {mriBenefits.map((benefit, index) => (
               <li key={index} className="benefit-item">
-                <span className="benefit-icon">✓</span>
-                <span>{benefit}</span>
+                <Icon name="check" className="benefit-icon" />
+                <Text>{benefit}</Text>
               </li>
             ))}
           </ul>
@@ -89,7 +92,7 @@ const MriChillerProjects = () => {
 
         {/* System Diagram Section */}
         <div className="system-diagram-section">
-          <h2 className="section-title">Repair - Maintenance - Installation</h2>
+          <Heading level={2} className="section-title">Repair - Maintenance - Installation</Heading>
           <div className="diagram-container">
             <img
               src="/assets/images/mri-chillers/mri-chillers-dig.avif"
@@ -101,12 +104,12 @@ const MriChillerProjects = () => {
 
         {/* Services Section */}
         <div className="services-section">
-          <h2 className="section-title">Our Complete Chiller Services</h2>
+          <Heading level={2} className="section-title">Our Complete Chiller Services</Heading>
           <div className="services-grid-mri">
             {mriServices.map((service) => (
               <div key={service.id} className="service-card">
-                <div className="service-icon">➤</div>
-                <h3 className="service-title-mri">{service.title}</h3>
+                <Icon name="arrow-right" className="service-icon" />
+                <Heading level={3} className="service-title-mri">{service.title}</Heading>
               </div>
             ))}
           </div>
@@ -114,7 +117,7 @@ const MriChillerProjects = () => {
 
         {/* Project Cards Section */}
         <div className="project-cards-section">
-          <h2 className="section-title">MRI Chiller Installation Projects</h2>
+          <Heading level={2} className="section-title">MRI Chiller Installation Projects</Heading>
           <div className="project-cards-grid">
             {mriProjects.map((project) => (
               <ProjectCard key={project.id} projectData={project} />
@@ -127,3 +130,4 @@ const MriChillerProjects = () => {
 };
 
 export default MriChillerProjects;
+  
