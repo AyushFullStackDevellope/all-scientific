@@ -90,8 +90,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    
     .exp-container {
-        padding: 20px;
+        padding: 40px;
     }
 
     h2 {

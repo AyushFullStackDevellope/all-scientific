@@ -1,82 +1,88 @@
-.intelligence-container {
+/* UpdatedEquipment.css */
+
+.rty-container-741 {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rty-header-741 {
   text-align: center;
-  padding: 30px;
-  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
-.intelligence-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.rty-logo-741 img {
+  width: auto;
+  height: 40px;
 }
 
-.intelligence-logo {
+.rty-tagline-741 {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.rty-title-741 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.rty-content-wrapper-741 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 15px;
 }
 
-.intelligence-logo img {
-  width: 120px;
+.rty-section-741, .rty-section-852, .rty-section-963, .rty-section-357 {
+  background: #f9f9f9;
+  padding: 15px;
+  width: 48%;
+  min-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  text-align: left;
 }
 
-.tagline {
-  font-size: 16px;
-  color: #d60029;
-  font-weight: bold;
-}
-
-.intelligence-content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 30px;
-}
-
-.intelligence-section {
-  max-width: 250px;
-  text-align: center;
-}
-
-.intelligence-section h2 {
-  color: #d60029;
+.rty-heading-741, .rty-heading-852, .rty-heading-963, .rty-heading-357 {
   font-size: 20px;
-  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 8px;
 }
 
-.intelligence-section p {
-  font-size: 16px;
+.rty-paragraph-741, .rty-paragraph-852, .rty-paragraph-963, .rty-paragraph-357 {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
 }
 
-.intelligence-center img {
-  width: 180px;
+.rty-center-741 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rty-center-741 img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-  .intelligence-content-wrapper {
+  .rty-content-wrapper-741 {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
   }
 
-  .intelligence-logo img {
-    width: 100px;
-  }
-
-  .tagline {
-    font-size: 14px;
-  }
-
-  .intelligence-section h2 {
-    font-size: 18px;
-  }
-
-  .intelligence-section p {
-    font-size: 14px;
-  }
-
-  .intelligence-center img {
-    width: 150px;
+  .rty-section-741, .rty-section-852, .rty-section-963, .rty-section-357 {
+    width: 100%;
   }
 }

@@ -99,6 +99,7 @@ body {
     .info-banner {
         height: 70vh;
         padding: 5vw;
+        margin-top: 60px;
     }
 
     .info-overlay {

@@ -12,31 +12,29 @@ body {
 }
 
 /* Main Container */
-.equipment-wrapper {
+.florp-bizzle {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 1100px;
+  max-width: 90vw;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.449);
+  background: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 20px;
 }
 
 /* Sidebar */
-.equipment-sidebar {
+.zibble-quark {
   flex: 1;
   text-align: center;
   padding: 20px;
+  min-width: 250px;
 }
 
-.equipment-logo {
-
-}
-
-.tagline {
+.glorp-nib {
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 10px;
@@ -44,25 +42,26 @@ body {
 }
 
 /* Content */
-.equipment-content {
+.wizzle-frump {
   flex: 2;
   padding: 20px;
+  min-width: 300px;
 }
 
-.description {
+.dorp-sklon {
   font-size: 1.1rem;
   margin-bottom: 15px;
   color: #555;
 }
 
-.highlight-text {
+.krong-dizzle {
   font-size: 1.2rem;
   font-weight: bold;
   color: #d32f2f;
   margin-top: 15px;
 }
 
-.equipment-image {
+.skrib-muff {
   width: 100%;
   max-width: 450px;
   display: block;
@@ -71,18 +70,29 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .equipment-wrapper {
+@media (max-width: 992px) {
+  .florp-bizzle {
     flex-direction: column;
     text-align: center;
     padding: 20px;
   }
 
-  .equipment-content {
+  .zibble-quark,
+  .wizzle-frump {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .florp-bizzle {
     padding: 15px;
   }
 
-  .equipment-image {
+  .wizzle-frump {
+    padding: 10px;
+  }
+
+  .skrib-muff {
     max-width: 100%;
   }
 }

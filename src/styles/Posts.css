@@ -2,7 +2,7 @@
 .posts-container {
   padding: 1.5rem;
   background-color: #ffffff;
-  max-width: 1200px;
+  max-width: 100VW;
   margin: 0 auto;
 }
 

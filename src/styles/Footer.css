@@ -4,10 +4,12 @@
 .footer {
   background-color: #0b1622;
   color: #ffffff;
-  padding: 40px 20px 20px; /* Reduced top and bottom padding */
+  padding: 40px 20px 20px;
+  /* Reduced top and bottom padding */
   font-family: 'Inter', sans-serif;
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
   position: relative;
+  width: 100vw;
 }
 
 .footer::before {
@@ -16,7 +18,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2px; /* Reduced from 3px */
+  height: 2px;
+  /* Reduced from 3px */
   background: linear-gradient(90deg, #f0a500, #e45b0e, #f0a500);
 }
 
@@ -28,8 +31,10 @@
 .footer-container {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 1fr;
-  gap: 25px; /* Reduced from 30px */
-  margin-bottom: 25px; /* Reduced from 35px */
+  gap: 25px;
+  /* Reduced from 30px */
+  margin-bottom: 25px;
+  /* Reduced from 35px */
 }
 
 /* Company info column */
@@ -39,11 +44,14 @@
 }
 
 .company-info p {
-  line-height: 1.5; /* Reduced from 1.7 */
+  line-height: 1.5;
+  /* Reduced from 1.7 */
   font-weight: 300;
-  margin-top: 8px; /* Reduced from 12px */
+  margin-top: 8px;
+  /* Reduced from 12px */
   color: #fff7f7;
-  font-size: 14px; /* Reduced from 14px */
+  font-size: 14px;
+  /* Reduced from 14px */
   max-width: 95%;
 }
 
@@ -52,14 +60,16 @@
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Reduced from 25px */
+  gap: 20px;
+  /* Reduced from 25px */
 }
 
 /* Map column */
 .locations-map-section {
   grid-column: 3;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 15px; /* Reduced from 18px */
+  padding: 15px;
+  /* Reduced from 18px */
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -71,7 +81,8 @@
 }
 
 .footer-logo {
-  width: 220px; /* Reduced from 220px */
+  width: 220px;
+  /* Reduced from 220px */
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   transition: filter 0.3s ease;
 }
@@ -82,16 +93,20 @@
 
 .footer-section h4 {
   color: #f0a500;
-  font-size: 15px; /* Reduced from 16px */
-  margin-bottom: 12px; /* Reduced from 16px */
+  font-size: 15px;
+  /* Reduced from 16px */
+  margin-bottom: 12px;
+  /* Reduced from 16px */
   display: flex;
   align-items: center;
-  gap: 8px; /* Reduced from 10px */
+  gap: 8px;
+  /* Reduced from 10px */
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 6px; /* Reduced from 8px */
+  padding-bottom: 6px;
+  /* Reduced from 8px */
 }
 
 .footer-section h4::after {
@@ -99,30 +114,36 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 36px; /* Reduced from 40px */
+  width: 36px;
+  /* Reduced from 40px */
   height: 2px;
   background-color: #f0a500;
 }
 
 .footer-section p,
 .footer-section ul {
-  font-size: 13px; /* Reduced from 14px */
-  color: #e0e0e0;
-  margin-bottom: 8px; /* Reduced from 10px */
-  line-height: 1.5; /* Reduced from 1.7 */
+  font-size: 13px;
+  /* Reduced from 14px */
+  margin-bottom: 8px;
+  /* Reduced from 10px */
+  line-height: 1.5;
+  /* Reduced from 1.7 */
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
-  margin-top: 0; /* Added to reduce space */
+  margin-top: 0;
+  /* Added to reduce space */
 }
 
 .footer-section ul li {
-  margin: 6px 0; /* Reduced from 8px */
+  margin: 6px 0;
+  /* Reduced from 8px */
   display: flex;
   align-items: center;
-  gap: 8px; /* Reduced from 10px */
+  gap: 8px;
+  /* Reduced from 10px */
   transition: transform 0.3s ease;
 }
 
@@ -131,7 +152,7 @@
 }
 
 .footer-section a {
-  color: #e0e0e0;
+  color: #6ab2fff1;
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
@@ -164,26 +185,32 @@
   color: #f0a500;
   min-width: 16px;
   text-align: center;
-  font-size: 13px; /* Reduced from 14px */
+  font-size: 13px;
+  /* Reduced from 14px */
 }
 
 .footer-section h4 i {
-  font-size: 15px; /* Reduced from 16px */
+  font-size: 15px;
+  /* Reduced from 16px */
 }
 
 /* Logos Section */
 .footer-logos {
   display: flex;
   justify-content: center;
-  gap: 50px; /* Reduced from 60px */
-  padding: 18px 0; /* Reduced from 25px */
+  gap: 50px;
+  /* Reduced from 60px */
+  padding: 18px 0;
+  /* Reduced from 25px */
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 8px; /* Reduced from 10px */
+  margin-top: 8px;
+  /* Reduced from 10px */
 }
 
 .partner-logo {
   transition: all 0.3s ease;
-  height: 65px; /* Reduced from 55px */
+  height: 65px;
+  /* Reduced from 55px */
   filter: grayscale(30%) brightness(1.2);
 }
 
@@ -195,9 +222,11 @@
 /* Footer Bottom */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 12px; /* Reduced from 15px */
+  padding-top: 12px;
+  /* Reduced from 15px */
   text-align: center;
-  font-size: 12px; /* Reduced from 13px */
+  font-size: 12px;
+  /* Reduced from 13px */
   color: #999;
   margin-top: 5px;
 }
@@ -205,8 +234,10 @@
 /* Map container styles */
 .map-container {
   width: 100%;
-  height: 160px; /* Reduced from 180px */
-  margin-bottom: 10px; /* Reduced from 12px */
+  height: 160px;
+  /* Reduced from 180px */
+  margin-bottom: 10px;
+  /* Reduced from 12px */
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -222,13 +253,17 @@
 /* Location tabs styles */
 .location-tabs {
   display: flex;
-  margin-bottom: 10px; /* Reduced from 12px */
-  gap: 6px; /* Reduced from 8px */
+  margin-bottom: 10px;
+  /* Reduced from 12px */
+  gap: 6px;
+  /* Reduced from 8px */
 }
 
 .location-tab {
-  font-size: 11px; /* Reduced from 12px */
-  padding: 5px 8px; /* Reduced from 6px 10px */
+  font-size: 11px;
+  /* Reduced from 12px */
+  padding: 5px 8px;
+  /* Reduced from 6px 10px */
   background-color: #1b2e44;
   cursor: pointer;
   border-radius: 4px;
@@ -254,13 +289,17 @@
 }
 
 .active-location-details {
-  margin-top: 8px; /* Reduced from 10px */
-  font-size: 12px; /* Reduced from 13px */
-  padding: 8px; /* Reduced from 10px */
+  margin-top: 8px;
+  /* Reduced from 10px */
+  font-size: 12px;
+  /* Reduced from 13px */
+  padding: 8px;
+  /* Reduced from 10px */
   background: rgba(255, 255, 255, 0.03);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  line-height: 1.5; /* Reduced from 1.6 */
+  line-height: 1.5;
+  /* Reduced from 1.6 */
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -268,11 +307,14 @@
   display: inline-block;
   color: #f0a500;
   text-decoration: none;
-  margin-top: 4px; /* Reduced from 6px */
-  font-size: 12px; /* Reduced from 13px */
+  margin-top: 4px;
+  /* Reduced from 6px */
+  font-size: 12px;
+  /* Reduced from 13px */
   font-weight: 500;
   transition: all 0.3s ease;
-  padding: 3px 0; /* Reduced from 4px */
+  padding: 3px 0;
+  /* Reduced from 4px */
 }
 
 .directions-link:hover {
@@ -286,10 +328,12 @@
 
 /* Contact and location items with better spacing */
 .contact-section p {
-  margin-bottom: 6px; /* Reduced from 8px */
+  margin-bottom: 6px;
+  /* Reduced from 8px */
   display: flex;
   align-items: center;
-  gap: 8px; /* Reduced from 10px */
+  gap: 8px;
+  /* Reduced from 10px */
 }
 
 .contact-section p i,
@@ -303,43 +347,51 @@
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
-    gap: 25px; /* Reduced from 30px */
+    gap: 25px;
+    /* Reduced from 30px */
+    width: 100vw;
   }
-  
+
   .company-info {
     grid-column: 1;
   }
-  
+
   .footer-info-column {
     grid-column: 2;
   }
-  
+
   .locations-map-section {
     grid-column: 1 / span 2;
-    margin-top: 12px; /* Reduced from 15px */
+    margin-top: 12px;
+    /* Reduced from 15px */
   }
-  
+
   .map-container {
-    height: 180px; /* Reduced from 200px */
+    height: 180px;
+    /* Reduced from 200px */
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 30px 15px 18px; /* Reduced from 40px 15px 20px */
+    padding: 30px 15px 18px;
+    /* Reduced from 40px 15px 20px */
+    width: 100vw;
+
   }
-  
+
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 25px; /* Reduced from 30px */
+    gap: 25px;
+    /* Reduced from 30px */
   }
-  
+
   .company-info,
   .footer-info-column,
   .locations-map-section {
     grid-column: 1;
   }
-  
+
   .footer-section {
     text-align: center;
   }
@@ -347,60 +399,68 @@
   .footer-section h4 {
     justify-content: center;
   }
-  
+
   .footer-section h4::after {
     left: 50%;
     transform: translateX(-50%);
-    width: 50px; /* Reduced from 60px */
+    width: 50px;
+    /* Reduced from 60px */
   }
 
   .footer-section ul li {
     justify-content: center;
   }
-  
+
   .contact-section p {
     justify-content: center;
   }
-  
+
   .footer-logos {
-    gap: 20px; /* Reduced from 25px */
+    gap: 20px;
+    /* Reduced from 25px */
     flex-wrap: wrap;
   }
-  
+
   .partner-logo {
-    height: 40px; /* Reduced from 45px */
+    height: 40px;
+    /* Reduced from 45px */
   }
-  
+
   .location-tabs {
     justify-content: center;
   }
-  
+
   .map-container {
     max-width: 100%;
-    height: 180px; /* Reduced from 200px */
-    margin: 0 auto 10px auto; /* Reduced from 12px */
+    height: 180px;
+    /* Reduced from 200px */
+    margin: 0 auto 10px auto;
+    /* Reduced from 12px */
   }
-  
+
   .footer-section ul li:hover {
     transform: translateY(-2px);
   }
-  
+
   .company-info p {
     max-width: 100%;
   }
 }
 
 /* Optimize space between elements */
-.footer-section + .footer-section {
-  margin-top: 0; /* Reduced from 5px */
+.footer-section+.footer-section {
+  margin-top: 0;
+  /* Reduced from 5px */
 }
 
 .locations-section ul li {
-  margin: 5px 0; /* Reduced from 6px */
+  margin: 5px 0;
+  /* Reduced from 6px */
 }
 
 .footer-section h4 {
-  margin-bottom: 10px; /* Reduced from 14px */
+  margin-bottom: 10px;
+  /* Reduced from 14px */
 }
 
 /* Professional hover effect for the entire footer section */
@@ -410,8 +470,16 @@
 
 /* Cleaner animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); } /* Reduced from 8px */
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  /* Reduced from 8px */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-section {
